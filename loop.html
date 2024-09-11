@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Kết quả :</p>
+        <label>Number :</label>
+        <input type="text" id="nhap"/>
+        <input type="button" onclick="loop()" value="loop"/><br>
+        <p id="demo"></p>
+    </form>
+    <script>
+        function loop() {
+            var number = document.getElementById('nhap').value;
+            var sum = 0;
+            for (var i =1;i <= number;i++) {
+                sum +=i; 
+            }
+            document.getElementById('demo').innerHTML=sum; }
+    </script>
+</body>
+</html>
